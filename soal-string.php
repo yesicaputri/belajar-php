@@ -19,6 +19,7 @@
             Output:
             Panjang string: 16, 
             Jumlah kata: 4 
+            ini punya yesica
         */
         
         echo "<h3> Soal Contoh</h3>";
