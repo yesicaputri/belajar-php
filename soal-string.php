@@ -35,7 +35,14 @@
         echo "<h3> Soal No 1</h3>";
 
         $first_sentence = "Hello PHP!" ; // Panjang string 10, jumlah kata: 2
+        echo "Panjang string first: ". strlen($first_sentence);
+        echo "<br>";
+        echo "Jumlah kata first: ". str_word_count($first_sentence);
+        echo "<br>";
         $second_sentence = "I'm ready for the challenges"; // Panjang string: 28,  jumlah kata: 5
+        echo "Panjang string second: ". strlen($second_sentence);
+        echo "<br>";
+        echo "Jumlah kata second: ". str_word_count($second_sentence);
         
         echo "<h3> Soal No 2</h3>";
         /* 
@@ -49,15 +56,16 @@
         echo "<label>String: </label> \"$string2\" <br>";
         echo "Kata pertama: " . substr($string2, 0, 1) . "<br>" ; 
         // Lanjutkan di bawah ini
-        echo "Kata kedua: " ;
-        echo "<br> Kata Ketiga: " ;
+        echo "Kata kedua: ". substr($string2, 2, 5) ;
+        echo "<br> Kata Ketiga: ". substr($string2, 6, 9) ;
         echo "<h3> Soal No 3 </h3>";
         /*
             SOAL NO 3
             Mengubah karakter atau kata yang ada di dalam sebuah string.
         */
         $string3 = "PHP is old but Good!";
-        echo "String: \"$string3\" "; 
+        echo "String: \"$string3\" <br>";
+        echo "Karakter Berubah: ". str_replace("Good", "awesome", "PHP is old but Good!");
         // OUTPUT : "PHP is old but awesome"
 
     ?>
