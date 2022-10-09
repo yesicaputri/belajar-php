@@ -34,7 +34,12 @@
     echo "Total Kids: " . count($kids); // Berapa panjang array kids
     echo "<br>";
     echo "<ol>";
-    echo "<li> $kids[0], $kids[1], $kids[2], $kids[3], $kids[4], $kids[5] </li>";
+    echo "<li> $kids[0] </li>";
+    echo "<li> $kids[1] </li>";
+    echo "<li> $kids[2] </li>";
+    echo "<li> $kids[3] </li>";
+    echo "<li> $kids[4] </li>";
+    echo "<li> $kids[5] </li>";
     // Lanjutkan
 
     echo "</ol>";
@@ -42,7 +47,11 @@
     echo "Total Adults: ". count($adults); // Berapa panjang array adults
     echo "<br>";
     echo "<ol>";
-    echo "<li> $adults[0], $adults[1], $adults[2],  $adults[3], $adults[4] </li>";
+    echo "<li> $adults[0] </li>";
+    echo "<li> $adults[1] </li>";
+    echo "<li> $adults[2] </li>";
+    echo "<li> $adults[3] </li>";
+    echo "<li> $adults[4] </li>";
     // Lanjutkan
 
     echo "</ol>";
@@ -114,44 +123,18 @@
 
         echo "<h3> Soal 3</h3>";
 
-    $kids = array (
-        array("Will Byers",12,"Will the Wise","Alive"),
-        array("Mike Wheeler",12,"Dugeon Master","Alive"),
-        array("Jim Hooper",43,"Chief Hopper","Deceased"),
-        array("Eleven",12,"E1","Alive")
-    );
-    
+    $name = array("Will Byers", "Mike Wheeler", "Jim Hooper", "Eleven");
+    $age = array("12", "12", "43", "12");
+    $aliases = array("Will the Wise", "Dugeon Master", "Chief Hopper", "E1");
+    $status = array("Alive", "Alive", "Deceased", "Alive");
 
-    echo "Name => ". $kids[0][0] . "<br>";
-    echo "Age => ". $kids[0][1] ;
-    echo "<br> Aliases => ". $kids[0][2] ; 
-    echo "<br> Status => ". $kids[0][3] ;
+    echo "Name => ".$name[0]. "<br>", "Age => ".$age[0]. "<br>", "Aliases => ".$aliases[0]. "<br>", "Status => ".$status[0]. "<br>";
     echo "<br>";
+    echo "Name => ".$name[1]. "<br>", "Age => ".$age[1]. "<br>", "Aliases => ".$aliases[1]. "<br>", "Status => ".$status[1]. "<br>";
     echo "<br>";
-    
-    
-    echo "Name => ". $kids[1][0] . "<br>";
-    echo "Age => ". $kids[1][1] ;
-    echo "<br> Aliases => ". $kids[1][2] ; 
-    echo "<br> Status => ". $kids[1][3] ;
+    echo "Name => ".$name[2]. "<br>", "Age => ".$age[2]. "<br>", "Aliases => ".$aliases[2]. "<br>", "Status => ".$status[2]. "<br>";
     echo "<br>";
-    echo "<br>";
-
-
-    echo "Name => ". $kids[2][0] . "<br>";
-    echo "Age => ". $kids[2][1] ;
-    echo "<br> Aliases => ". $kids[2][2] ; 
-    echo "<br> Status => ". $kids[2][3] ;
-    echo "<br>";
-    echo "<br>";
-
-
-    echo "Name => ". $kids[3][0] . "<br>";
-    echo "Age => ". $kids[3][1] ;
-    echo "<br> Aliases => ". $kids[3][2] ; 
-    echo "<br> Status => ". $kids[3][3] ;
-    echo "<br>";
-    echo "<br>";
+    echo "Name => ".$name[3]. "<br>", "Age => ".$age[3]. "<br>", "Aliases => ".$aliases[3]. "<br>", "Status => ".$status[3];
 
 
     ?>
