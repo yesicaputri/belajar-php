@@ -20,10 +20,10 @@
             Adults: "Hopper", "Nancy",  "Joyce", "Jonathan", "Murray"
         */
     $kids = array("Mike", "Dustin", "Will", "Lucas", "Max", "Eleven"); // Lengkapi di sini
-    echo "Kids : " . $kids[0] . ", " . $kids[1] . ", " . $kids[2] . ", " . $kids[3] . ", " . $kids[4] . ", " . $kids[5];
+    print_r($kids);
     echo "<br>";
     $adults = array("Hopper", "Nancy",  "Joyce", "Jonathan", "Murray");
-    echo "Alduts : " . $adults[0] . ", " . $adults[1] . ", " . $adults[2] . ", " . $adults[3] . ", " . $adults[4];
+    print_r($adults);
     echo "<h3> Soal 2</h3>";
     /* 
             SOAL NO 2
@@ -123,18 +123,22 @@
 
         echo "<h3> Soal 3</h3>";
 
-    $name = array("Will Byers", "Mike Wheeler", "Jim Hooper", "Eleven");
-    $age = array("12", "12", "43", "12");
-    $aliases = array("Will the Wise", "Dugeon Master", "Chief Hopper", "E1");
-    $status = array("Alive", "Alive", "Deceased", "Alive");
+    
+    $a = array ("Name"=>"Will Byers" , "Age"=>"12" , "Aliases"=>"Will the Wise" , "Status"=>"Alive");
+    print_r($a);
 
-    echo "Name => ".$name[0]. "<br>", "Age => ".$age[0]. "<br>", "Aliases => ".$aliases[0]. "<br>", "Status => ".$status[0]. "<br>";
-    echo "<br>";
-    echo "Name => ".$name[1]. "<br>", "Age => ".$age[1]. "<br>", "Aliases => ".$aliases[1]. "<br>", "Status => ".$status[1]. "<br>";
-    echo "<br>";
-    echo "Name => ".$name[2]. "<br>", "Age => ".$age[2]. "<br>", "Aliases => ".$aliases[2]. "<br>", "Status => ".$status[2]. "<br>";
-    echo "<br>";
-    echo "Name => ".$name[3]. "<br>", "Age => ".$age[3]. "<br>", "Aliases => ".$aliases[3]. "<br>", "Status => ".$status[3];
+    $datanama = array(
+
+        array("Name"=>"Will Byers" , "Age"=>"12" , "Aliases"=>"Will the Wise" , "Status"=>"Alive"),
+        array("Name"=>"Mike Wheeler" , "Age"=>"12" , "Aliases"=>"Dugeon Master" , "Status"=>"Alive"),
+        array("Name"=>"Jim Hooper" , "Age"=>"43" , "Aliases"=>"Chief Hopper" , "Status"=>"Alive"),
+        array("Name"=>"Eleven" , "Age"=>"12" , "Aliases"=>"El" , "Status"=>"Alive"),
+        
+    );
+
+    echo "<pre>";
+    print_r($datanama);
+    echo "</pre>";
 
 
     ?>
