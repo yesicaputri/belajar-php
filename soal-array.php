@@ -124,8 +124,7 @@
         echo "<h3> Soal 3</h3>";
 
     
-    $a = array ("Name"=>"Will Byers" , "Age"=>"12" , "Aliases"=>"Will the Wise" , "Status"=>"Alive");
-    print_r($a);
+
 
     $datanama = array(
 
